@@ -44,19 +44,22 @@ footer
 
 #titre_universel
 {
-	position:relative;
+	position:absolute;
 	text-align: center;
+	vertical-align: middle;
 	color:#FFFFFF;
-	font-size:60px;
-	top:-20px;
-	
+	height: 7%;
+	width: 100%;
+	border:solid rgba(65, 65, 65, 1) 0.5px;
+	background-color: rgba(51, 51, 51, 1);
+	left:0;
+	margin-top: 0;
 }
 
 #logo
 {
-	position:fixed;
-	top:0px;
-	width:
+	width: 90%;
+	margin-left: auto;
 }
 
 #logo:hover
@@ -70,40 +73,75 @@ footer
 	text-decoration:none;
 }
 
-#liens:hover
-{
-	color:red;
-	cursor: url(Ressources/Images/Curseur/precision.cur ), auto;
-}
 
 nav
 {
-	position:absolute;
-	top:100px;
-	left:-25px;
+	position: absolute;
+	top: 0%;
+	left:0;
 	font-family:'BebasNeueBold',Impact,fantasy;
+	font-size: 20px;
+	border:solid rgba(65, 65, 65, 1) 0.5px;
 }
 
 #menu
 {
 	position:fixed;
+	width: 14.5%;
+	height: 100%;
+	background-color: rgba(51, 51, 51, 1);
 }
+
+ul{
+	padding-left: 5%;
+}
+
+.onglets{
+	padding: 2%;
+	border-left:solid rgb(202, 92, 1) 4px;
+	background-color: rgb(58, 58, 58);
+}
+
+li
+{
+	list-style: none;
+}
+
+.menu_top
+{
+	font-size: 25px;
+	text-align: center;
+	color: white;
+}
+  
 
 .menu_gauche
 {
-	list-style-type:none;
-	background: url(Ressources/Images/ligne495.png) bottom no-repeat;
+	color: white;
+}
+
+.menu_gauche:hover
+{
+	cursor: pointer;
+	background-color: rgba(66, 66, 66, 1);
+	font-weight: bold;
+}
+
+#home{
+	width: 10%;
+	padding-right: 3%;
 }
 
 #b1
 {
 	width:70%;
-	margin:auto;
-	color:Black;
-	Background:rgba(255,255,255,.7);
-	font-family:impactreg,Impact,fantasy;
-	padding:1% 3% 3% 3%;
-	border-radius:10px;
+	margin-left:20%;
+	color:white;
+	background-color: rgba(51, 51, 51, 1);
+	font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+	border:solid rgba(65, 65, 65, 1) 0.5px;
+	border-radius: 10px;
+	padding: 30px;
 	text-align:justify;
 }
 
@@ -113,117 +151,7 @@ td
 	font-family:impactreg,Impact,fantasy;
 }
 
-/* Adaptatif */
-@media screen and (min-width: 1536px)
-{
-	#b1
-	{
-		font-size:28px;
-	}
-	
-	nav, footer
-	{
-		font-size:25px;
-	}
-	
-	#titre_universel
-	{
-		font-size:60px;
-	}
-}
 
-@media screen and (max-width: 1536px)
-{
-	#b1
-	{
-		font-size:22px;
-	}
-	
-	nav, footer
-	{
-		font-size:25px;
-	}
-	
-	#titre_universel
-	{
-		font-size:60px;
-	}
-}
-
-@media screen and (max-width: 1296px)
-{
-	#b1
-	{
-		font-size:19px;
-	}
-	
-	#titre_universel
-	{
-		font-size:50px;
-	}
-}
-
-@media screen and (max-width: 1132px)
-{
-	#logo
-	{
-		width: 25%;
-	}
-	
-	nav, footer
-	{
-		font-size:20px;
-	}
-	
-	#titre_universel
-	{
-		font-size:45px;
-	}
-}
-
-@media screen and (max-width: 915px)
-{
-	#b1
-	{
-		font-size:15px;
-	}
-	
-	nav, footer
-	{
-		font-size:18px;
-	}
-	
-	#titre_universel
-	{
-		font-size:40px;
-	}
-}
-
-@media screen and (max-width: 842px)
-{
-	nav, footer
-	{
-		font-size:15px;
-	}
-	
-	#titre_universel
-	{
-		font-size:35px;
-	}
-}
-
-@media screen and (max-width: 715px)
-{
-	#b1, nav, footer
-	{
-		font-size:11px;
-	}
-	
-	#titre_universel
-	{
-		font-size:30px;
-	}
-}
 
 
 
@@ -231,7 +159,8 @@ td
 
 .body_accueil
 {
-	background: url(Ressources/Images/fond4.jpg) fixed no-repeat;
+	/*background: url(Ressources/Images/fond4.jpg) fixed no-repeat;*/
+	background-color: rgba(44, 44, 44, 1);
 	background-size: cover;
 }
 
@@ -246,23 +175,11 @@ td
 	width:40%;
 	left: 30%;
 	margin:auto;
-	/* La transition s'applique à la fois sur la largeur et la hauteur, avec une dur&eacute;e d'une seconde. */
-	-webkit-transition: all 1s ease; /* Safari et Chrome */
-	-moz-transition: all 1s ease; /* Firefox */
-	-ms-transition: all 1s ease; /* Internet Explorer 9 */
-	-o-transition: all 1s ease; /* Opera */
-	transition: all 1s ease;
 }
 
 .nouvelle_ope:hover
 {
-/* L'image est grossie de 10% */
-	-webkit-transform:scale(1.1); /* Safari et Chrome */
-	-moz-transform:scale(1.1); /* Firefox */
-	-ms-transform:scale(1.1); /* Internet Explorer 9 */
-	-o-transform:scale(1.1); /* Opera */
-	transform:scale(1.1);
-	cursor: url(Ressources/Images/Curseur/precision.cur ), auto;
+	cursor: pointer;
 }
 
 #pres_accueil tr td
@@ -482,11 +399,11 @@ td
 
 .gif_sledge
 {
-	float:left;
-	width:40%;
+	float:right;
+	width:30%;
 	margin-top:1%;
 	margin-bottom:1%;
-	margin-right:1%;
+	margin-left:1%;
 }
 
 .tab_jeu
@@ -603,6 +520,7 @@ td
 	transition: opacity 500ms;
 	visibility: hidden;
 	opacity:0;
+	
 }
 
 .overlay:target
@@ -620,6 +538,7 @@ td
 	width: 70%;
 	position:relative;
 	transition: all 0.1s ease-in-out;
+	color:black;
 }
 
 .popup2 .close

@@ -1,0 +1,61 @@
+#tabmenu ul {
+	position:absolute;
+	padding: 0;
+	left:-1000%;
+}
+	
+#tabmenu  > li {
+	display:inline-block;
+	width:150px;
+	vertical-align:top;
+	position:relative;
+}
+
+#tabmenu li a , #tabmenu p {
+	background-color:#EFEFEF;
+	display:block;
+	width:150px;
+	color:rgb(219, 25, 25);
+	font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+
+#tabmenu p a {
+	display:inline;
+	position:absolute;
+	border:0;
+	left:-9999px;
+	background:transparent;
+}
+
+#tabmenu p:focus a {
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	color: green;
+}
+
+#tabmenu ul a:focus , #tabmenu p:focus + ul li a {
+	margin-left:1000%;
+}
+
+.overlay
+{
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0, 0, 0, 0.7);
+	transition: opacity 500ms;
+	visibility: hidden;
+	opacity:0;
+	
+}
+
+.overlay:target
+{
+	visibility: visible;
+	opacity: 1;
+}
