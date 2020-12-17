@@ -97,6 +97,7 @@
  #menuToggle .toOverlay
  {
    display: block;
+   width: 33px;
  }
  
  #menuToggle > a > div span:first-child

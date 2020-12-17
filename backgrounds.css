@@ -3,9 +3,14 @@
   height: 300px;
 }
 
+
 .row1 {
   background-color: grey;
+  background: url(Ressources/Images/fond4.jpg) no-repeat center;
+  background-size: 100%;
 }
+
+
 
 .row2 {
   background-color: rgb(110, 106, 106);
