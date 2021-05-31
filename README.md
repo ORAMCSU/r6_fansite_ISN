@@ -24,7 +24,7 @@ Nous devions présenter le jeu et ses mécaniques, ainsi que les chamionnats.
 
 Le groupe d'étudiants travaillant sur le projet était composé de : Julien Marzal, Paul Nadal et un de nos amis (dont le nom est tû pour des raisons de vie privée).
 
-#### Disclaimer
+#### Démenti
 A cause du temps qui a passé depuis cette époque, ce dépôt est plutôt une vitrine de ce que nous étions capables de faire quand nous étions encore des programmeurs novices, qu'un dépôt maintenu.
 Un grand nombre de nos sources on été perdues ce qui fait que tout le travail de prévision est à refaire.
 
